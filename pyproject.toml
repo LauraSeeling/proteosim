@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proteosim"
+version = "0.1.0"
+description = "This repository provides a simulation framework for mass-spectrometry–based proteomics experiments. It focuses on modeling protein digestion, Liquid chromatography, realistic MS1/MS2 spectra as well as ion fragmentation of peptides. The code is under active development and is continuously being expanded and improved."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Laura Seeling" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pytest",
+    "matplotlib",
+    "pyteomics"
+]
+
+[tool.setuptools.packages.find]
+include = ["proteosim*"]
