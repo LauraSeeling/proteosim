@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: proteosim
+Version: 0.1.0
+Summary: This repository provides a simulation framework for mass-spectrometry–based proteomics experiments. It focuses on modeling protein digestion, Liquid chromatography, realistic MS1/MS2 spectra as well as ion fragmentation of peptides. The code is under active development and is continuously being expanded and improved.
+Author: Laura Seeling
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: matplotlib
+Requires-Dist: pyteomics
+Dynamic: license-file
+
+# Proteosim Course Package
+
+## Package description
+This repository provides a simulation framework for mass-spectrometry–based proteomics experiments. It focuses on modeling protein digestion, Liquid chromatography, realistic MS1/MS2 spectra as well as ion fragmentation of peptides. The code is under active development and is continuously being expanded and improved.
+
+```mermaid
+flowchart LR
+    A[protein] --> B[protein digestion]
+    B --> C[fragments]
+    C --> D[simulated liquid chromatography]
+    D --> E[select peptides]
+    E --> F[simulate MS1]
+    F --> G[fragmentation]
+    G --> H[simulate MS2]
+```
+
