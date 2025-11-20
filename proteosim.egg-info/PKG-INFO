@@ -21,7 +21,7 @@ This repository provides a simulation framework for mass-spectrometry–based pr
 ```mermaid
 flowchart LR
     A[protein] --> B[protein digestion]
-    B --> C[fragments]
+    B --> C[peptides]
     C --> D[simulated liquid chromatography]
     D --> E[select peptides]
     E --> F[simulate MS1]
