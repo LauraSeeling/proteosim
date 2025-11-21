@@ -14,13 +14,12 @@ flowchart LR
     F --> G[fragmentation]
     G --> H[simulate MS2]
 ```
-
 ### Input
 FASTA files containing one or multiple protein sequences\
 Optional configuration parameters:\
 Enzymes and digestion patterns\
 Retention-time model parameters\
-masses of amino acids\
+masses of amino acids
 
 ### Processing Steps
 Enzymatic Digestion\
@@ -33,13 +32,13 @@ Mass Spectrometry Simulation\
 Calculates molecular masses and mass to charge ratios\
 Simulates MS1 intensity profiles\
 Generates MS2 fragmentation spectra\
-Produces tables of peptide fragements andm/z values\
+Produces tables of peptide fragements andm/z values
 
 ### Output
 Peptide tables (CSV/TSV/DataFrame) containing sequences, masses, RTs, and properties\
 Simulated MS1 spectra\
 Simulated MS2 fragment spectra\
-m/z tables for downstream analysis\
+m/z tables for downstream analysis
 
 ## overview of functions
 
@@ -61,8 +60,9 @@ m/z tables for downstream analysis\
 
 ## end-to-end example
 A complete example demonstrating the full workflow can be found at:\
-tutorials/ms_experiment_final.ipynb\
-This notebook shows how to:\+
+You can find the full workflow example in the 
+[End-to-end example notebook](ms_experiment_final.ipynb).\
+This notebook shows how to:\
 - Load proteins from FASTA
 - Digest them
 - Model retention times to conduct a simulated liquid chromatography
