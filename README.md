@@ -16,32 +16,30 @@ flowchart LR
 ```
 
 ### Input
-FASTA files containing one or multiple protein sequences
-Optional configuration parameters:
-Enzymes and digestion patterns
-Retention-time model parameters
-masses of amino acids
+FASTA files containing one or multiple protein sequences\
+Optional configuration parameters:\
+Enzymes and digestion patterns\
+Retention-time model parameters\
+masses of amino acids\
 
 ### Processing Steps
-Enzymatic Digestion
-Simulates tryptic or user-defined enzymatic digestion
-Controls miscleavages, minimum/maximum peptide length
-Produces peptide sequences with basic physicochemical properties
-Chromatography Simulation
-Predicts peptide retention times (sequence- or model-based)
-Generates chromatographic elution profiles
-Optional visualization of chromatographic curves
-Mass Spectrometry Simulation
-Calculates monoisotopic masses and charge states
-Simulates MS1 intensity profiles
-Generates MS2 fragmentation spectra (b/y ions, depending on method)
-Produces tables of m/z values and intensities
+Enzymatic Digestion\
+Simulates tryptic or user-defined enzymatic digestion\
+Produces peptide sequences\
+Predicts peptide retention times\
+Liquid Chromatography Simulation\
+Optional visualization of chromatographic result\
+Mass Spectrometry Simulation\
+Calculates molecular masses and mass to charge ratios\
+Simulates MS1 intensity profiles\
+Generates MS2 fragmentation spectra\
+Produces tables of peptide fragements andm/z values\
 
 ### Output
-Peptide tables (CSV/TSV/DataFrame) containing sequences, masses, RTs, and properties
-Simulated MS1 spectra
-Simulated MS2 fragment spectra
-m/z tables for downstream analysis
+Peptide tables (CSV/TSV/DataFrame) containing sequences, masses, RTs, and properties\
+Simulated MS1 spectra\
+Simulated MS2 fragment spectra\
+m/z tables for downstream analysis\
 
 ## overview of functions
 
@@ -62,16 +60,16 @@ m/z tables for downstream analysis
 - ps.fragment_peptide: simulates peptide fragmentation
 
 ## end-to-end example
-A complete example demonstrating the full workflow can be found at:
-tutorials/ms_experiment_final.ipynb
-This notebook shows how to:
-Load proteins from FASTA
-Digest them
-Model retention times to conduct a simulated liquid chromatography
-Simulate MS1 and MS2 data
+A complete example demonstrating the full workflow can be found at:\
+tutorials/ms_experiment_final.ipynb\
+This notebook shows how to:\+
+- Load proteins from FASTA
+- Digest them
+- Model retention times to conduct a simulated liquid chromatography
+- Simulate MS1 and MS2 data
 
 ## requirements
-pip install -r requirements.txt
+pip install -r requirements.txt\
 pip install .
 
 
