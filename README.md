@@ -57,10 +57,9 @@ flowchart LR
 
 ## end-to-end example
 A complete example demonstrating the full workflow can be found at:\
-You can find the full workflow example in\
-[End-to-end example notebook](ms_experiment_final.ipynb).
+You can find the full workflow example in [End-to-end example notebook](ms_experiment_final.ipynb).
 
-This notbook shows how to:\ 
+This notbook shows how to: 
 - Load proteins from FASTA
 - Digest them
 - Model retention times to conduct a simulated liquid chromatography
