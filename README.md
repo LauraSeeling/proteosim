@@ -15,30 +15,27 @@ flowchart LR
     G --> H[simulate MS2]
 ```
 ### Input
-FASTA files containing one or multiple protein sequences\
-Optional configuration parameters:\
-Enzymes and digestion patterns\
-Retention-time model parameters\
-masses of amino acids
+- FASTA files containing one or multiple protein sequences\
+- Optional configuration parameters:\
+- Enzymes and digestion patterns\
+- Retention-time model parameters\
+- masses of amino acids
 
 ### Processing Steps
-Enzymatic Digestion\
-Simulates tryptic or user-defined enzymatic digestion\
-Produces peptide sequences\
-Predicts peptide retention times\
-Liquid Chromatography Simulation\
-Optional visualization of chromatographic result\
-Mass Spectrometry Simulation\
-Calculates molecular masses and mass to charge ratios\
-Simulates MS1 intensity profiles\
-Generates MS2 fragmentation spectra\
-Produces tables of peptide fragements andm/z values
+- Enzymatic Digestion\
+- Simulates tryptic or user-defined enzymatic digestion\
+- Predicts peptide retention times for liquid Chromatography Simulation\
+- Mass Spectrometry Simulation\
+- Calculates molecular masses and mass to charge ratios\
+- Simulates MS1 intensity profiles\
+- Generates MS2 fragmentation spectra\
+- Produces tables of peptide fragements andm/z values
 
 ### Output
-Peptide tables (CSV/TSV/DataFrame) containing sequences, masses, RTs, and properties\
-Simulated MS1 spectra\
-Simulated MS2 fragment spectra\
-m/z tables for downstream analysis
+- Peptide tables (CSV/TSV/DataFrame) containing m/z after MS1 and MS2\
+- Simulated MS1 spectra\
+- Simulated MS2 fragment spectra\
+- m/z tables for downstream analysis
 
 ## overview of functions
 
@@ -60,8 +57,9 @@ m/z tables for downstream analysis
 
 ## end-to-end example
 A complete example demonstrating the full workflow can be found at:\
-You can find the full workflow example in the 
+You can find the full workflow example in\
 [End-to-end example notebook](ms_experiment_final.ipynb).\
+
 This notebook shows how to:\
 - Load proteins from FASTA
 - Digest them
